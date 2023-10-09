@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,200;9..40,300;9..40,400;9..40,500;9..40,600;9..40,700;9..40,800&display=swap');
+
+:root {
+  --dark: #444;
+  --navbar-active-link: #c7ab62;
+  --navbar-link-hover: #c7ab62;
+  --navbar-link-hover: #c7ab62;
+  --button-bg: #fff;
+  --button-clr: #444;
+  --button-bg-hover: #c7ab62;
+  --arrow-slide-clr: rgba(0, 0, 0, .4);
+  --arrow-slide-hover: #c7ab62;
+  --form-btn-hover: #c7ab62;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #c7ab62 #fff;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #c7ab62;
+}
+
+body {
+  margin: 0;
+  font-family: 'DM Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: auto;
+  position: relative;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+a.my_link {
+  text-decoration: none;
+  color: #666;
+  transition: all .2s;
+}
+
+a.shop-now {
+  font-size: 16px;
+  color: #222;
+  font-weight: 900;
+  transition: all .2s;
+  text-decoration: none;
+}
+
+a.shop-now svg {
+  margin-left: 1px;
+  font-size: 21px;
+}
+
+a.shop-now:hover {
+  color: #c7ab62;
+}
+
+ul.ul-custom {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.underline-heading {
+  font-size: 35px;
+  position: relative;
+  font-weight: 400;
+}
+
+.underline-heading::before,
+.underline-heading::after {
+  content: "";
+  position: absolute;
+  bottom: -7px;
+  left: 0;
+  height: 2px;
+}
+
+.underline-heading::before {
+  width: 100%;
+  background-color: #d3d3d3;
+}
+
+.underline-heading::after {
+  width: 30%;
+  background-color: #000;
+}
+
+/* style the confirm msg */
+.react-confirm-alert-overlay {
+  background: rgba(0, 0, 0, .3) !important;
+  z-index: 99999999999 !important;
+  animation: react-confirm-alert-fadeIn 0.01s 0.01s forwards !important;
+}
+
+.react-confirm-alert-body {
+  width: 500px !important;
+  padding: 34px !important;
+  text-align: center !important;
+  border-radius: 6px !important;
+  background-color: #e2e3e5 !important;
+}
+
+.react-confirm-alert-button-group {
+  justify-content: center !important;
+}
+
+.react-confirm-alert-button-group>button {
+  background: #222 !important;
+  font-size: 17px !important;
+}
+
+/* style the counter btn*/
+button.counter-btn {
+  border: none;
+  outline: none;
+  padding: 0;
+  line-height: 0;
+  font-size: 20px;
+}
+
+button.counter-btn svg {
+  transition: all .2s;
+}
+
+button.counter-btn:not(:disabled):hover svg {
+  color: #c7ab62;
+}

@@ -1,0 +1,124 @@
+.contact-main .contact-main-box .touch-info {
+    display: flex;
+    gap: 40px;
+    width: 85%;
+    margin: 80px auto 0;
+}
+
+/* style left */
+.contact-main .contact-main-box .touch-info .left {
+    flex: 9;
+}
+
+/* style from */
+.contact-main .contact-main-box .touch-info .left .contact-form form {
+    margin-top: 28px;
+}
+
+.contact-main .contact-main-box .touch-info .left .contact-form form p.show-error {
+    font-size: 13px;
+    margin: 0;
+}
+
+.contact-main .contact-main-box .touch-info .left .contact-form form input,
+.contact-main .contact-main-box .touch-info .left .contact-form form textarea {
+    background-color: #f3f4f5;
+    border: none;
+    border-radius: 0;
+    margin-top: 10px;
+    padding: 10px;
+    width: 100%;
+    outline: none;
+}
+
+.contact-main .contact-main-box .touch-info .left .contact-form form input:focus,
+.contact-main .contact-main-box .touch-info .left .contact-form form textarea:focus {
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, .25);
+}
+
+.contact-main .contact-main-box .touch-info .left .contact-form form button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: all .2s;
+}
+
+.contact-main .contact-main-box .touch-info .left .contact-form form button:hover {
+    background-color: #c7ab62 !important;
+}
+
+/* style the spiner inside button */
+.contact-main .contact-main-box .touch-info .left .contact-form form button .spinner-border {
+    --bs-spinner-width: 20px;
+    --bs-spinner-height: 20px;
+    --bs-spinner-border-width: 2px;
+    --bs-spinner-animation-speed: 1s;
+}
+
+/* ==================================== */
+
+/* style right */
+.contact-main .contact-main-box .touch-info .right {
+    flex: 4;
+}
+
+.contact-main .contact-main-box .touch-info .right .info-box .info-single {
+    display: flex;
+    gap: 30px;
+    padding: 20px 0;
+    border-bottom: 1px solid #000;
+}
+
+.contact-main .contact-main-box .touch-info .right .info-box .info-single svg {
+    font-size: 32px;
+}
+
+.contact-main .contact-main-box .touch-info .right .info-box .info-single .box-flex {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+/* style map */
+.contact-main iframe {
+    width: 85%;
+    height: 370px;
+    margin: 100px auto 50px;
+    border: none;
+    display: block;
+}
+
+/*====================================*/
+/*===========Responsive===============*/
+/*====================================*/
+
+@media only screen and (max-width: 480px) {
+
+    .contact-main .contact-main-box .touch-info {
+        gap: 25px;
+        width: 90%;
+        margin: 30px auto 0;
+        flex-direction: column;
+    }
+
+    .underline-heading {
+        font-size: 6vw;
+    }
+
+    .contact-main .contact-main-box .touch-info .right .info-box .info-single {
+        display: flex;
+        gap: 20px;
+        padding: 10px 0;
+    }
+
+    .contact-main .contact-main-box .touch-info .right .info-box .info-single svg {
+        font-size: 6vw;
+    }
+
+    .contact-main iframe {
+        width: 90%;
+        margin: 50px auto;
+    }
+
+}

@@ -1,0 +1,340 @@
+.shop .underline-heading {
+    font-size: 23px;
+    margin-bottom: 22px;
+}
+
+.shop .shop-box {
+    margin: 80px 0;
+    height: auto;
+    align-items: baseline;
+}
+
+.shop .shop-box .left {
+    flex: 9;
+}
+
+.shop .shop-box .left .top-part {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.shop .shop-box .left .top-part button.show-sidebar {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding: 5px 10px;
+    border: 1px solid lightgray;
+    border-radius: 3px;
+    display: none;
+    /* will display it in small devices */
+}
+
+/* ========================================= */
+
+/* style select tag */
+.shop .shop-box .left .top-part .select-box {
+    display: inline-block;
+    width: 300px;
+    position: relative;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.shop .shop-box .left .top-part .select-box::before {
+    content: "Sort By : ";
+    position: absolute;
+    top: 9px;
+    left: 10px;
+    color: #888;
+    font-size: 14px;
+}
+
+.shop .shop-box .left .top-part select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    position: relative;
+    padding: 8px 0px 8px 70px;
+    font-size: 14px;
+    outline: none;
+    border: none;
+    border: 1px solid lightgray;
+    color: #000;
+    width: 100%;
+    background-color: transparent;
+    border-radius: 4px;
+    font-family: 'Varela Round', sans-serif;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.shop .shop-box .left .top-part .select-box svg {
+    position: absolute;
+    top: 9px;
+    right: 12px;
+    color: #000;
+}
+
+.shop .shop-box .left .all-shop-products-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin-top: 15px;
+}
+
+.shop .shop-box .left .all-shop-products-box .single {
+    width: calc((100% - 48px) / 3);
+}
+
+.shop .shop-box .left .all-shop-products-box .single .image-hover,
+.shop .shop-box .left .all-shop-products-box .single .image-hover .image-hover-top {
+    width: 100%;
+}
+
+/* style right */
+.shop .shop-box .right {
+    flex: 2;
+}
+
+/* general style for the form inside the sidebar in large devices and small as well */
+.right .form-cat-filters .cat-filter-single {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.right .form-cat-filters .cat-filter-single:last-child {
+    margin-bottom: 55px;
+}
+
+.right .form-cat-filters .cat-filter-single label {
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: all .1s;
+}
+
+.right .form-cat-filters .cat-filter-single label:hover {
+    color: #c7ab62;
+}
+
+.right .form-cat-filters .cat-filter-single label.main-cat-label {
+    font-weight: 700;
+    color: #c7ab62;
+}
+
+.right .form-cat-filters .cat-filter-single .form-check-input:checked {
+    background-color: #c7ab62;
+    border-color: #c7ab62;
+}
+
+.form-cat-filters .range-price-value {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.right .form-cat-filters .range-price-value span {
+    font-size: 15px;
+}
+
+.right .form-cat-filters .range-price-value span:nth-child(2) {
+    color: #c7ab62;
+    font-weight: 600;
+}
+
+/* ======================================= */
+/* ======================================= */
+/* ======================================= */
+
+/* style range slider */
+
+input[type="range"] {
+    width: 100%;
+    -webkit-appearance: none;
+    appearance: none;
+    background: #eee;
+    background-image: linear-gradient(#222, #222);
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    height: 7px;
+    margin-right: 15px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    position: relative;
+    top: -6px;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #c7ab62;
+    width: 17px;
+    height: 17px;
+    border: 1px solid #eee;
+    border-radius: 50%;
+    cursor: ew-resize;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+    height: 7px;
+    border: none;
+}
+
+/*====================================*/
+/*====================================*/
+
+/* style ShopSideBarSmall */
+.small-sidebar-modal .modal-body {
+    padding: 0;
+    height: 100%;
+    overflow-y: auto !important;
+    overflow-x: hidden;
+}
+
+.small-sidebar-modal .modal-body::-webkit-scrollbar {
+    width: 2px;
+}
+
+.small-sidebar-modal .modal-body form {
+    width: 90%;
+    margin: 15px auto 30px;
+}
+
+.small-sidebar-modal .modal-dialog {
+    width: 60vw;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    margin: 0;
+    pointer-events: none;
+    transform: translateX(100%) !important;
+    /* change the animation of modal content , it will be show from right to left */
+}
+
+/* when show modal show it from right to left NOT with fade animation */
+.small-sidebar-modal.modal.show .modal-dialog {
+    transform: translateX(0) !important;
+}
+
+/* change the transition animation of modal content */
+.small-sidebar-modal .modal.fade .modal-dialog {
+    transition: transform .5s ease !important;
+}
+
+.small-sidebar-modal .modal-content {
+    height: 100%;
+    border-radius: 0;
+    border: none;
+}
+
+.small-sidebar-modal .top-heading-title h3 {
+    font-size: 21px;
+    font-weight: 300;
+}
+
+.small-sidebar-modal .top-heading-title svg {
+    font-size: 21px;
+    cursor: pointer;
+}
+
+/* style the pagination */
+.shop-pagination {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+
+}
+
+.shop-pagination .page {
+    border: 1px solid #dee2e6;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 17px;
+    color: #222;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.shop-pagination .page.previous,
+.shop-pagination .page.next {
+    width: max-content;
+    padding: 0 10px;
+    background-color: #222;
+    color: #fff;
+}
+
+.shop-pagination .page.previous {
+    border-radius: 5px 0 0 5px;
+}
+
+.shop-pagination .page.next {
+    border-radius: 0 5px 5px 0;
+}
+
+.shop-pagination .active {
+    background-color: #c7ab62;
+    color: #fff;
+}
+
+.shop-pagination .next:disabled,
+.shop-pagination .previous:disabled {
+    background-color: #6c757d;
+    cursor: default;
+}
+
+.shop-pagination svg {
+    font-size: 11px;
+}
+
+/*====================================*/
+/*===========Responsive===============*/
+/*====================================*/
+
+@media only screen and (max-width: 480px) {
+
+    .shop .shop-box {
+        margin: 40px 0;
+        gap: 0 !important;
+    }
+
+    .small-sidebar-modal .modal-dialog {
+        width: 85%;
+    }
+
+    .shop .shop-box .left .all-shop-products-box .single {
+        width: 95%;
+        margin: auto;
+    }
+
+    .shop .shop-box .right {
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 767px) {
+
+    .shop .shop-box .left .top-part {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .shop .shop-box .right {
+        display: none;
+    }
+
+    /* show the btn in small devices */
+    .shop .shop-box .left .top-part button.show-sidebar {
+        display: block;
+    }
+
+    .shop .shop-box .shop-sidebar-small {
+        display: block;
+    }
+
+}

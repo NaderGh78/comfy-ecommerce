@@ -1,0 +1,222 @@
+.top-trending {
+    margin-top: 50px;
+}
+
+.top-trending h3 {
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: 700;
+}
+
+.top-trending .top-trending-slider {
+    height: auto;
+}
+
+.top-trending .top-trending-slider .single {
+    width: 100%;
+}
+
+/* style the slider */
+
+/* ============================== in order to make the slidr in the middle container */
+.slick-slide>div {
+    margin: 0 10px;
+}
+
+.slick-list {
+    margin: 0 -10px;
+}
+
+/* ============================== in order to make the slidr in the middle container */
+
+.top-trending-slider:hover .slick-prev,
+.top-trending-slider:hover .slick-next {
+    opacity: 1;
+}
+
+/* =================================== */
+/* style image hover */
+.image-hover {
+    position: relative;
+    width: 100%;
+    height: auto;
+    outline: none;
+    border: none;
+    text-align: center;
+}
+
+.image-hover .image-hover-top {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.image-hover .image-hover-top span.out-stock {
+    position: absolute;
+    left: 1.5rem;
+    top: 1.5rem;
+    background-color: #c7ab62;
+    z-index: 2;
+    color: #fff;
+    text-transform: capitalize;
+    padding: 0 10px;
+    font-size: 13px;
+    border-radius: 4px;
+}
+
+/* *********************************** remove the border that appear when focuuuuuuuuuuuuuus */
+.image-hover .image-hover-top a:focus {
+    outline: none !important;
+}
+
+/* ***************************************************************************************** */
+
+.image-hover .image-hover-top a img {
+    transition: opacity .4s ease, transform .4s ease, -webkit-transform .4s ease;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.image-hover .image-hover-top a img:nth-child(1) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.image-hover .image-hover-top:hover a img:nth-child(1) {
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+.image-hover .image-hover-top button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    bottom: 16px;
+    padding: 20px 0;
+    width: 90%;
+    height: 33px;
+    border: none;
+    background-color: var(--button-bg);
+    color: var(--button-clr);
+    transform: translateX(-50%) scale(.9);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 4px;
+    transition: opacity .4s, transform .3s ease, background-color .2s ease;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.image-hover .image-hover-top button div {
+    pointer-events: none;
+}
+
+.image-hover .image-hover-top button .spinner-border {
+    --bs-spinner-width: 20px;
+    --bs-spinner-height: 20px;
+    --bs-spinner-border-width: 2px;
+    --bs-spinner-animation-speed: 1s;
+}
+
+.image-hover .image-hover-top button>span {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 0;
+    pointer-events: none;
+}
+
+.image-hover .image-hover-top:hover button {
+    opacity: 1;
+    transform: translateX(-50%) scale(1);
+}
+
+.image-hover .image-hover-top button:hover {
+    background-color: var(--button-bg-hover);
+    color: #fff;
+}
+
+.single .image-hover .single-desc {
+    margin-top: 20px;
+}
+
+.single .image-hover .single-desc h4 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.single .image-hover .single-desc h4 a:hover {
+    color: #c7ab62;
+}
+
+.single .image-hover .single-desc .price {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 5px;
+}
+
+.single .image-hover .single-desc .price span {
+    font-weight: 700;
+}
+
+.single .image-hover .single-desc .price span.lineTrough {
+    text-decoration: line-through;
+    color: #888;
+    font-weight: 400;
+}
+
+/* hide it in top trending product slider and show it when search product */
+.single .image-hover .single-desc .category-and-brand {
+    display: none;
+}
+
+.single .image-hover .single-desc .category-and-brand span {
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+/*====================================*/
+/*===========Responsive===============*/
+/*====================================*/
+
+@media only screen and (max-width: 480px) {
+
+    .top-trending h3 {
+        font-size: 6vw;
+        margin-bottom: 17px;
+    }
+
+    .top-trending {
+        margin-top: 20px;
+    }
+
+    .image-hover {
+        width: 100%;
+    }
+
+    .image-hover .image-hover-top {
+        width: 100%;
+        height: auto;
+    }
+
+    .top-trending-slider .slick-prev,
+    .top-trending-slider .slick-next {
+        opacity: 1;
+    }
+
+}

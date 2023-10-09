@@ -1,0 +1,281 @@
+.footer-section {
+    background-color: #222;
+}
+
+.footer-section .footer-section-box {
+    display: flex;
+    gap: 30px;
+    padding: 100px 0 50px 0;
+}
+
+/* style left */
+.footer-section .footer-section-box .left {
+    flex: 4;
+}
+
+.footer-section .footer-section-box .left img {
+    width: 145px;
+}
+
+.footer-section .footer-section-box .left p {
+    margin-top: 24px;
+    color: #999;
+    line-height: 1.6;
+}
+
+.footer-section .footer-section-box .left h4 {
+    font-size: 16px;
+    color: #fff;
+}
+
+.footer-section .footer-section-box .left ul {
+    display: flex;
+    gap: 10px;
+}
+
+.footer-section .footer-section-box .left ul li a {
+    color: #fff;
+    font-size: 20px;
+    transition: all .2s;
+}
+
+.footer-section .footer-section-box .left ul li a:hover {
+    color: #c7ab62;
+}
+
+/* ======================================== */
+/* ============ START STYLE ACCORDIAN ============================ */
+/* ======================================== */
+
+.footer-section .footer-section-box .footer-toggle {
+    display: none;
+}
+
+.accordion-body {
+    padding: 0;
+}
+
+.accordion-button {
+    background-color: transparent !important;
+    padding: 0;
+    box-shadow: none !important;
+}
+
+.accordion-button:focus {
+    box-shadow: none !important;
+    border-color: transparent !important
+}
+
+.accordion-item {
+    background-color: transparent;
+    border: none
+}
+
+.accordion {
+    --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+    --bs-accordion-btn-active-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+    --bs-accordion-btn-icon-width: 15px;
+    --bs-accordion-active-color: transparent;
+}
+
+/* ======================================== */
+/* ============ END STYLE ACCORDIAN ============================ */
+/* ======================================== */
+
+.footer-section .footer-section-box a {
+    transition: all .2s;
+}
+
+.footer-section .footer-section-box a:hover {
+    color: #c7ab62 !important;
+}
+
+.footer-section .footer-section-box h3 {
+    font-size: 16px;
+    margin-bottom: 0;
+    color: #fff;
+}
+
+/* ==================================== */
+
+/* style middle */
+.footer-section .footer-section-box .middle {
+    flex: 5;
+}
+
+.footer-section .footer-section-box .middle>div {
+    margin-bottom: 40px;
+}
+
+.footer-section .footer-section-box .middle P {
+    margin: 15px 0 20px 0;
+    color: #999;
+    line-height: 1.6;
+}
+
+.footer-section .footer-section-box .middle .order-by-phone {
+    margin-bottom: 15px;
+}
+
+.footer-section .footer-section-box .middle a {
+    color: #fff;
+}
+
+.footer-section .footer-section-box .middle a svg {
+    font-size: 22px;
+}
+
+.footer-section .footer-section-box .middle h5 {
+    color: #fff;
+    font-size: 16px;
+    margin: 15px 0 5px 0;
+}
+
+.footer-section .footer-section-box .middle span {
+    display: block;
+    color: #999;
+}
+
+.footer-section .footer-section-box .middle span+a {
+    color: #999;
+}
+
+/* ==================================== */
+
+/* style right */
+.footer-section .footer-section-box .right {
+    flex: 3;
+}
+
+.footer-section .footer-section-box .right ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section .footer-section-box .right ul {
+    margin: 15px 0 20px 0;
+}
+
+.footer-section .footer-section-box .right ul li a:hover {
+    display: block;
+    transform: translateX(10px);
+}
+
+/* style copyright */
+.footer-copyright {
+    text-align: center;
+    color: #999;
+    border-top: 1px solid #706969;
+    padding: 25px 0;
+}
+
+.footer-copyright p {
+    margin: 0;
+}
+
+/* style bottom search */
+.bottom-search {
+    border-top: 1px solid #dee2e6;
+    background-color: #fff;
+    position: -webkit-sticky;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    padding: 7px 0;
+    z-index: 70;
+    display: none;
+}
+
+.bottom-search .search {
+    padding: 6px 0;
+}
+
+.bottom-search .search ul {
+    display: flex;
+    width: 100%;
+}
+
+.bottom-search .search ul li {
+    width: calc(100% / 4);
+    text-align: center;
+    border-right: 1px solid;
+    border-right: 1px solid #dee2e6;
+}
+
+.bottom-search .search ul li:last-child {
+    border-right: none;
+}
+
+.bottom-search .search ul li a svg {
+    font-size: 20px;
+    color: #444;
+}
+
+a.icon-badge {
+    position: relative;
+}
+
+a.icon-badge span {
+    position: absolute;
+    top: -8px;
+    left: -7px;
+    width: 19px;
+    height: 14px;
+    font-size: 10px;
+    background-color: var(--navbar-active-link);
+    color: #fff;
+    text-align: center;
+    line-height: 13px;
+    border-radius: 9px;
+}
+
+
+/*====================================*/
+/*===========Responsive===============*/
+/*====================================*/
+
+@media only screen and (max-width: 480px) {
+
+    .footer-section .footer-section-box {
+        flex-direction: column;
+        padding: 40px 0 40px 0;
+        gap: 10px;
+    }
+
+    .footer-section .footer-section-box .footer-toggle {
+        display: block;
+    }
+
+    .footer-section .footer-section-box .footer-content-show {
+        display: none;
+    }
+
+    .footer-section .footer-section-box .middle>div {
+        margin-bottom: 5px;
+    }
+
+    .footer-section .footer-section-box .middle .order-by-phone {
+        margin-bottom: 10px;
+    }
+
+    .footer-copyright p {
+        font-size: 14px;
+        padding: 0 25px;
+    }
+
+    .footer-copyright {
+        padding: 8px 0;
+    }
+
+}
+
+@media only screen and (max-width: 991px) {
+
+    .footer-copyright {
+        margin-bottom: 50px;
+    }
+
+    .bottom-search {
+        display: block;
+    }
+
+}

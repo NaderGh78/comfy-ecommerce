@@ -1,0 +1,96 @@
+.slick-prev,
+.slick-next {
+    opacity: 0;
+    transition: all .2s;
+    top: calc(50% - 20px) !important;
+}
+
+.slick-prev {
+    left: 40px !important;
+    z-index: 1;
+}
+
+.slick-next {
+    right: 70px !important;
+}
+
+.slick-next:before,
+.slick-prev:before {
+    content: "" !important;
+}
+
+.next-slick-arrow,
+.prev-slick-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    color: #fff;
+    font-size: 25px;
+    background-color: var(--arrow-slide-clr);
+    border-radius: 50%;
+    transition: all .2s;
+}
+
+.next-slick-arrow:hover,
+.prev-slick-arrow:hover {
+    background-color: var(--arrow-slide-hover);
+}
+
+/* style dosts of slick slider */
+.slick-dots {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+}
+
+.slick-dots li {
+    width: 30px !important;
+    height: 5px !important;
+    background-color: #222 !important;
+    transition: all .2s;
+}
+
+.slick-dots li button::before {
+    display: none !important;
+}
+
+.slick-dots li button {
+    width: 100% !important;
+    height: 15px !important;
+    padding: 0 !important;
+    background-color: #222 !important;
+}
+
+.slick-dots li.slick-active {
+    width: 50px !important;
+}
+
+/*====================================*/
+/*===========Responsive===============*/
+/*====================================*/
+
+@media only screen and (max-width: 480px) {
+
+    .next-slick-arrow,
+    .prev-slick-arrow {
+        width: 30px;
+        height: 30px;
+        font-size: 17px;
+    }
+
+    .slick-prev {
+        left: 28px !important;
+        top: 40% !important;
+    }
+
+    .slick-next {
+        right: 37px !important;
+        top: 40% !important;
+    }
+
+    .slick-dots {
+        bottom: -12px !important;
+    }
+}

@@ -1,0 +1,141 @@
+ /* style tabs */
+ .modal-register-box .modal-body {
+     overflow-y: auto !important;
+ }
+
+ .modal-register-box .modal-body::-webkit-scrollbar {
+     width: 3px;
+ }
+
+ .modal-content {
+     max-height: 100% !important;
+     overflow: hidden !important;
+ }
+
+ .modal-register-box .modal-header {
+     border-bottom: none !important;
+ }
+
+ .form-group label+div input {
+     position: relative;
+     height: 38px;
+ }
+
+ .modal-register-box .btn-close {
+     transition: all .3s linear 0s;
+     color: #000 !important;
+     opacity: 1;
+ }
+
+ .modal-register-box .btn-close:hover {
+     transform: rotate(-180deg);
+     color: #000 !important;
+ }
+
+ .modal-register-box .btn-close {
+     box-shadow: none;
+ }
+
+ .modal-register-box .nav-tabs .nav-item {
+     width: calc(100% / 2);
+
+ }
+
+ .modal-register-box .nav-tabs .nav-item button {
+     width: 100%;
+     border: none;
+     color: #000 !important;
+     font-weight: 700;
+     border-bottom: 2px solid #dee2e6 !important;
+     margin-bottom: 0 !important;
+ }
+
+ .modal-register-box .nav-tabs .nav-link.active {
+     border-bottom: 2px solid #c7ab62 !important;
+     color: #c7ab62 !important;
+ }
+
+ .modal-register-box .tab-content {
+     margin-top: 20px;
+ }
+
+ /* style form */
+ .modal-register-box form span.span-icon {
+     position: absolute;
+     right: 15px;
+     top: 43%;
+     transform: translateY(-50%);
+     font-size: 20px;
+     cursor: pointer;
+ }
+
+ .modal-register-box form p.show-error {
+     font-size: 14px;
+     margin-bottom: 0;
+     /* display: none; */
+ }
+
+ .modal-register-box form button {
+     transition: all .2s;
+ }
+
+ .modal-register-box form button:hover {
+     background-color: #c7ab62 !important;
+     color: #fff !important;
+ }
+
+ .modal-register-box .login-form-bottom {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     gap: 15px;
+     margin: 25px 0 40px 0;
+     overflow: hidden;
+ }
+
+ .modal-register-box .login-form-bottom span {
+     position: relative;
+ }
+
+ .modal-register-box .login-form-bottom span {
+     position: relative;
+ }
+
+ .modal-register-box .login-form-bottom span {
+     position: relative;
+ }
+
+ .modal-register-box .login-form-bottom span::before,
+ .modal-register-box .login-form-bottom span::after {
+     content: "";
+     position: absolute;
+     top: 12px;
+     width: 500px;
+     height: 2px;
+     background-color: #ccc;
+ }
+
+ .modal-register-box .login-form-bottom span::after {
+     right: 45px;
+ }
+
+ .modal-register-box .login-form-bottom span::before {
+     left: 45px;
+ }
+
+ .modal-register-box .login-form-bottom a {
+     display: block;
+     width: 100%;
+     color: #000;
+     text-decoration: none;
+     background-color: #f6f6f6;
+     text-align: center;
+     padding: 8px 0;
+     border-radius: 2px;
+     transition: all .3s;
+ }
+
+ .modal-register-box .login-form-bottom a:hover {
+     background-color: #c7ab62;
+     color: #fff;
+ }

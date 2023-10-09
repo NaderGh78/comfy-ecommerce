@@ -1,0 +1,79 @@
+.faq-section .faq-section-box {
+    display: flex;
+    gap: 20px;
+    margin-top: 100px;
+}
+
+/* style faq question */
+.faq-section .faq-section-box .faq-q {
+    flex: 4;
+}
+
+.faq-section .faq-section-box .faq-q h2 {
+    font-size: 35px;
+    letter-spacing: 3px;
+    margin-bottom: 50px;
+    margin-right: 20px;
+    text-transform: uppercase;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+}
+
+.faq-section .faq-section-box .faq-q p {
+    color: #999;
+    margin-bottom: 70px;
+    margin-right: 20px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+}
+
+.faq-section .faq-section-box .faq-q ul li a {
+    color: #999;
+    display: block !important;
+    font-size: 15px;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+/* style faq answer */
+.faq-section .faq-section-box .faq-a {
+    flex: 8;
+}
+
+.faq-section .faq-section-box .faq-a .single-faq-item h5 {
+    padding-top: 70px;
+    font-size: 16px;
+}
+
+.faq-section .faq-section-box .faq-a .single-faq-item:first-child h5 {
+    padding-top: 0;
+}
+
+.faq-section .faq-section-box .faq-a .single-faq-item p {
+    color: #666;
+    font-size: 15px;
+}
+
+/*====================================*/
+/*===========Responsive===============*/
+/*====================================*/
+
+@media only screen and (max-width: 480px) {
+
+    .faq-section .faq-section-box {
+        margin-top: 40px;
+        flex-direction: column;
+    }
+
+    .faq-section .faq-section-box .faq-q p {
+        margin: 0 0 20px 0
+    }
+
+    .faq-section .faq-section-box .faq-q h2 {
+        font-size: 30px;
+        margin: 0 0 20px 0
+    }
+
+}

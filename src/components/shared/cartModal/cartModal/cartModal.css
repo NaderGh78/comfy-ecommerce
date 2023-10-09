@@ -1,0 +1,251 @@
+.cart-modal-Modal .modal-body {
+    padding: 0;
+    height: 100%;
+    overflow-y: auto !important;
+    overflow-x: hidden;
+}
+
+.cart-modal-Modal .cart-products-content::-webkit-scrollbar {
+    width: 3px;
+}
+
+.cart-modal-Modal .modal-dialog {
+    width: 450px;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    margin: 0;
+    pointer-events: none;
+    transform: translateX(100%) !important;
+    /* change the animation of modal content , it will be show from right to left */
+}
+
+/* when show modal show it from right to left NOT with fade animation */
+.cart-modal-Modal.show .modal-dialog {
+    transform: translateX(0) !important;
+}
+
+/* change the transition animation of modal content */
+.cart-modal-Modal .modal.fade .modal-dialog {
+    transition: transform .5s ease !important;
+}
+
+.cart-modal-Modal .modal-content {
+    height: 100%;
+    border-radius: 0;
+    border: none;
+}
+
+.cart-modal-Modal .top-heading-title h3 {
+    font-size: 21px;
+    font-weight: 300;
+}
+
+.cart-modal-Modal .top-heading-title svg {
+    font-size: 21px;
+    cursor: pointer;
+}
+
+.cart-modal-Modal .cart-products-content {
+    padding: 0 30px;
+    height: 400px;
+    overflow-y: scroll;
+}
+
+/* style the single product in cart */
+.cart-modal-Modal .cart-single-product {
+    display: flex;
+    gap: 25px;
+    padding: 25px 0;
+    border-bottom: 1px solid gray;
+}
+
+.cart-modal-Modal .cart-single-product:last-child {
+    border-bottom: none;
+}
+
+.cart-modal-Modal .cart-single-product .left {
+    width: 80px;
+    height: 80px;
+}
+
+.cart-modal-Modal .cart-single-product .left img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cart-modal-Modal .cart-single-product .right h3 {
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.cart-modal-Modal .cart-single-product .right h3 a:hover {
+    color: #c7ab62;
+}
+
+.cart-modal-Modal .cart-single-product .right .top-content {
+    display: flex;
+    align-items: center;
+    gap: 95px;
+}
+
+.cart-modal-Modal .cart-single-product .right .top-content h4 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.cart-modal-Modal .cart-single-product .right .top-content h4 span {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-left: 8px;
+    border-radius: 50%;
+}
+
+.cart-modal-Modal .cart-single-product .right .cart-counter span {
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+}
+
+.cart-modal-Modal .cart-single-product .right .middle-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.cart-modal-Modal .cart-single-product .right .middle-content span {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.cart-modal-Modal .cart-single-product .right .middle-content span.lineTrough {
+    text-decoration: line-through;
+    color: #888;
+    font-weight: 400;
+    margin-left: 15px;
+}
+
+.cart-modal-Modal .cart-single-product .right .middle-content h4 {
+    font-size: 17px;
+    font-weight: 600;
+    align-self: baseline;
+}
+
+.cart-modal-Modal .cart-single-product .right .middle-content h4 span {
+    font-weight: 400;
+}
+
+/* style cart modal footer */
+.cart-modal-Modal .cart-box-footer {
+    padding: 0 20px;
+    margin-top: 20px;
+}
+
+.cart-modal-Modal .cart-box-footer .total-price {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.cart-modal-Modal .cart-box-footer .total-price h4 {
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.cart-modal-Modal .cart-box-footer .total-price span {
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.cart-modal-Modal .cart-box-footer a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+}
+
+.cart-modal-Modal .cart-box-footer a.checkout {
+    padding: 8px 0;
+    transition: all .2s;
+    font-weight: 600;
+    font-size: 17px;
+}
+
+.cart-modal-Modal .cart-box-footer a.checkout:hover {
+    background-color: #d3d4d5;
+}
+
+.cart-modal-Modal .cart-box-footer a:last-of-type {
+    text-decoration: underline;
+    margin-top: 14px;
+}
+
+.cart-modal-Modal .cart-is-empty {
+    text-align: center;
+    margin-top: 60px;
+    height: auto;
+}
+
+.cart-modal-Modal .cart-is-empty h6 {
+    font-weight: 400;
+}
+
+.cart-modal-Modal .cart-is-empty a {
+    display: inline-block;
+    padding: 20px;
+    margin-top: 5px;
+    text-decoration: none;
+    background: #222;
+    color: #fff;
+}
+
+/*====================================*/
+/*===========Responsive===============*/
+/*====================================*/
+
+@media only screen and (max-width: 480px) {
+
+    .cart-modal .cart-modal-box {
+        width: 90%;
+    }
+
+    .cart-modal-Modal .modal-dialog {
+        width: 90%;
+    }
+
+    .cart-modal-Modal .cart-single-product {
+        flex-direction: column;
+        padding: 25px 0 17px;
+        gap: 15px;
+    }
+
+    .cart-modal-Modal .cart-single-product .left {
+        margin: auto;
+    }
+
+    .cart-modal-Modal .cart-single-product .right h3 {
+        text-align: center;
+    }
+
+    .cart-modal-Modal .cart-single-product .right .top-content {
+        gap: 0;
+        justify-content: space-between;
+    }
+
+    .cart-modal-Modal .cart-products-content {
+        height: 460px;
+    }
+
+    .cart-modal-Modal .cart-box-footer .total-price {
+        margin-bottom: 10px;
+    }
+
+    .cart-modal-Modal .cart-box-footer a:last-of-type {
+        margin-top: 0;
+    }
+
+}

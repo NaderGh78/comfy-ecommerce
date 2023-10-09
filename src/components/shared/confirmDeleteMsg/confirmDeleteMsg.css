@@ -1,0 +1,34 @@
+.confirm-delete-msg-modal {
+    background-color: rgba(0, 0, 0, .3);
+}
+
+.confirm-delete-msg-modal .modal-content {
+    background-color: #e2e3e5 !important;
+}
+
+/*====================================*/
+/*===========Responsive===============*/
+/*====================================*/
+
+@media only screen and (max-width: 480px) {
+
+    .confirm-delete-msg-modal .modal-content {
+        background-color: #e2e3e5 !important;
+        width: 75%;
+        margin: auto;
+    }
+
+    .confirm-delete-msg-modal .modal-header {
+        padding: 10px;
+    }
+
+    .confirm-delete-msg-modal .modal-body {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .confirm-delete-msg-modal .modal-footer {
+        padding: 0 0 10px;
+    }
+
+}

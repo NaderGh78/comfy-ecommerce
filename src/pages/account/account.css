@@ -1,0 +1,332 @@
+.account-main {
+    margin-top: 100px;
+}
+
+.account-main .account-main-box {
+    width: 60%;
+    margin-left: 120px;
+}
+
+.account-main .account-main-box .account-user-info {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 20px;
+}
+
+.account-main .account-main-box .account-user-info button {
+    border: none;
+    background-color: transparent;
+}
+
+.account-main .account-main-box .account-user-info div h2 {
+    font-size: 45px;
+    font-weight: 400;
+}
+
+.account-main .account-main-box .account-user-info div p {
+    font-size: 20px;
+    color: #222;
+}
+
+.account-main .account-main-box .account-user-info div p span:last-child {
+    color: #999;
+}
+
+.account-main .account-main-box .account-user-info span.logout {
+    color: #dc3545;
+    cursor: pointer;
+}
+
+/* style tabs */
+.account-main .account-main-box .account-tabs {
+    margin-top: 40px;
+    height: auto;
+}
+
+.account-main .account-main-box .account-tabs .fade {
+    opacity: 1;
+    transition: none;
+    /* remove fade class from tabs */
+}
+
+.account-main .account-main-box .account-tabs ul.account-link-lists {
+    border-bottom: 1px solid lightgray;
+    padding: 0 0 20px 0;
+}
+
+.account-main .account-main-box .account-tabs ul.account-link-lists li {
+    width: calc(100% / 3);
+}
+
+.account-main .account-main-box .account-tabs ul.account-link-lists li a {
+    position: relative;
+    text-decoration: none;
+    display: inline-block;
+    color: #999;
+    border: none;
+    text-align: left;
+    padding: 8px 0;
+    font-weight: 600;
+    transition: color .2s;
+}
+
+.account-main .account-main-box .account-tabs ul.account-link-lists li a:hover {
+    color: #222;
+}
+
+.account-main .account-main-box .account-tabs ul.account-link-lists li a.active {
+    color: #222;
+}
+
+.account-main .account-main-box .account-tabs ul.account-link-lists li a.active::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #222;
+    bottom: -20px;
+}
+
+.account-main .account-main-box .account-tabs .tab-single {
+    margin-bottom: 70px;
+    width: 65%;
+}
+
+.account-main .account-main-box .account-tabs .tab-single h2.tab-title {
+    margin: 50px 0;
+    font-weight: 600;
+}
+
+/* style accordion */
+.account-main .account-main-box .account-tabs .tab-single .panel-group {
+    margin-bottom: 100px;
+    border: 1px solid rgba(0, 0, 0, .125);
+    border-radius: 5px;
+}
+
+.account-main .account-main-box .account-tabs .tab-single .panel-group .panel-heading {
+    background-color: #f8fafc;
+    padding: 15px 10px;
+}
+
+.account-main .account-main-box .account-tabs .tab-single .panel-group .panel-heading .left span.user-id-products {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.account-main .account-main-box .account-tabs .tab-single .panel-group .panel-heading .left p {
+    font-size: 15px;
+    margin: 15px 0;
+}
+
+.account-main .account-main-box .account-tabs .tab-single .panel-group .panel-heading .left p span:last-child {
+    color: #22c55e;
+}
+
+.account-main .account-main-box .account-tabs .tab-single .panel-group .panel-heading h4.right span {
+    background-color: #fff;
+    border: 1px solid #222;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 11px 17px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all .2s;
+    user-select: none;
+}
+
+.account-main .account-main-box .account-tabs .tab-single .panel-group .panel-heading h4.right span:hover {
+    background-color: #f3f4f6;
+}
+
+.account-main .account-main-box .account-tabs .tab-single .panel-group ul li {
+    border-bottom: 1px solid rgba(0, 0, 0, .125);
+}
+
+.account-main .account-main-box .account-tabs .tab-single .panel-group ul li .user-product-single {
+    padding: 30px 15px;
+}
+
+.account-main .account-main-box .account-tabs .tab-single .panel-group ul li .user-product-single .left img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.account-main .account-main-box .account-tabs .tab-single .panel-group ul li .user-product-single .left p {
+    color: gray;
+}
+
+.account-main .account-main-box .account-tabs .tab-single .panel-group ul li .user-product-single .left span.pr-color {
+    width: 15px;
+    height: 15px;
+    background-color: red;
+    display: inline-block;
+    border-radius: 50%;
+    vertical-align: sub;
+    margin-left: 5px;
+}
+
+.account-main .account-main-box .account-tabs .tab-single .panel-group span.price-boxed {
+    color: #22c55e;
+    border: 2px solid;
+    padding: 3px 8px;
+    font-size: 15px;
+    border-radius: 8px;
+}
+
+.account-main .account-main-box .account-tabs .tab-single .panel-collapse {
+    max-height: 500px;
+    overflow: auto;
+    transition: max-height .5s ease;
+}
+
+.account-main .account-main-box .account-tabs .tab-single .panel-close {
+    max-height: 0;
+}
+
+.account-main .account-main-box .account-tabs .tab-single .panel-collapse::-webkit-scrollbar {
+    width: 2px !important;
+}
+
+.account-main .account-main-box .account-tabs .tab-single .panel-group .panel-footer {
+    padding: 20px 15px;
+}
+
+/*update btn style */
+.account-main .account-main-box .account-tabs button.update-btn {
+    border: none;
+    outline: none;
+    background-color: #222;
+    color: #fff;
+    border-radius: 30px;
+    padding: 8px 15px;
+    font-size: 15px;
+    transition: all .2s;
+}
+
+.account-main .account-main-box .account-tabs button.update-btn:hover {
+    background-color: #c7ab62;
+}
+
+.account-main .account-main-box .account-tabs select {
+    background: none !important;
+    /* to remove the arrow from select tage */
+}
+
+.account-main .account-main-box .account-tabs .form-group label+div input {
+    position: relative;
+    height: 38px;
+}
+
+.account-main .account-main-box .account-tabs form span.span-icon {
+    cursor: pointer;
+    position: absolute;
+    right: 15px;
+    top: 43%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+.account-main .account-main-box .account-tabs form label {
+    font-weight: 600;
+}
+
+/*====================================*/
+/*===========Responsive===============*/
+/*====================================*/
+
+@media only screen and (max-width: 480px) {
+
+    .account-main .account-main-box {
+        width: 90%;
+        margin: auto;
+    }
+
+    .account-main .account-main-box .account-user-info div h2 {
+        font-size: 7vw;
+    }
+
+    .account-main .account-main-box .account-user-info div p {
+        font-size: 16px;
+        margin-bottom: 0;
+    }
+
+    .account-main .account-main-box .account-tabs {
+        margin-top: 20px;
+    }
+
+    .account-main .account-main-box .account-tabs>div:first-child {
+        overflow-x: auto;
+    }
+
+    .account-main .account-main-box .account-tabs>div:first-child::-webkit-scrollbar {
+        height: 1px;
+    }
+
+    .account-main .account-main-box .account-tabs>div:first-child::-webkit-scrollbar-thumb {
+        background-color: transparent;
+    }
+
+    .account-main .account-main-box .account-tabs ul.account-link-lists {
+        width: 450px;
+        padding: 0;
+    }
+
+    .account-main .account-main-box .account-tabs ul.account-link-lists li a {
+        font-size: 17px;
+    }
+
+    .account-main .account-main-box .account-tabs ul.account-link-lists li a.active::before {
+        bottom: 0;
+    }
+
+    .account-main .account-main-box .account-tabs .tab-single h2.tab-title {
+        margin: 20px 0;
+        font-size: 20px;
+    }
+
+    .account-main .account-main-box .account-tabs form label {
+        font-size: 15px;
+    }
+
+    .account-main .account-main-box .account-tabs .tab-single {
+        width: 100%;
+    }
+
+    .account-main .account-main-box .account-tabs .tab-single .panel-group {
+        margin-bottom: 60px;
+    }
+
+    .account-main .account-main-box .account-tabs .tab-single .panel-group .panel-heading .left span.user-id-products {
+        font-size: 4vw;
+    }
+
+    .account-main .account-main-box .account-tabs .tab-single .panel-group .panel-heading .left p {
+        font-size: 3.3vw;
+        margin: 5px 0;
+    }
+
+    .account-main .account-main-box .account-tabs .tab-single .panel-group .panel-heading h4.right span {
+        font-size: 3.5vw;
+        padding: 5px 8px;
+    }
+
+    .account-main .account-main-box .account-tabs .tab-single .panel-group .panel-heading {
+        padding: 15px 10px;
+        flex-direction: column;
+        align-items: flex-start !important;
+        gap: 20px;
+    }
+
+    .account-main .account-main-box .account-tabs .tab-single .panel-group ul li .user-product-single {
+        padding: 15px;
+    }
+
+    .account-main .account-main-box .account-tabs .tab-single .panel-group ul li .user-product-single .left img+div h5 {
+        font-size: 4vw;
+    }
+
+}

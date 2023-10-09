@@ -1,0 +1,33 @@
+.header-cover {
+    height: 375px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 64px;
+    background-image: url("../../../assets/images/header-cover.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header-cover h2 {
+    font-size: 48px;
+    letter-spacing: 1px;
+}
+
+/*====================================*/
+/*===========Responsive===============*/
+/*====================================*/
+
+@media only screen and (max-width: 480px) {
+
+    .header-cover {
+        margin-top: 55px;
+        height: 260px;
+    }
+
+    .header-cover h2 {
+        font-size: 36px;
+    }
+
+}
