@@ -209,13 +209,13 @@ const Shop = () => {
 
   const PRODUCT_PER_PAGE = 6;
 
-  const pages = Math.ceil(arrayToRender.length / PRODUCT_PER_PAGE);
+  const pages = Math.ceil(arrayToRender?.length / PRODUCT_PER_PAGE);
 
   const startIndex = (currentPage - 1) * PRODUCT_PER_PAGE;
 
   const finishIndex = currentPage * PRODUCT_PER_PAGE;
 
-  const orderedProducts = arrayToRender.slice(startIndex, finishIndex);
+  const orderedProducts = arrayToRender?.slice(startIndex, finishIndex);
 
   // draw all filterd products
   const renderedProducts = orderedProducts?.map((d, i) => {
@@ -233,12 +233,9 @@ const Shop = () => {
       <HeaderCover headingContent="Shop" />
       <Container>
         <div className="shop-box d-flex gap-4">
+
           <AllShopProducts
-            products={products}
-            params={params}
             updateFilter={updateFilter}
-            priceQuery={priceQuery}
-            min={min}
             selectQuery={selectQuery}
             handleShowSmallSideBar={handleShowSmallSideBar}
             paginationQuery={paginationQuery}
@@ -246,10 +243,8 @@ const Shop = () => {
             setCurrentPage={setCurrentPage}
             activePagination={activePagination}
             setActivePagination={setActivePagination}
-            pages={pages}
-            orderedProducts={orderedProducts}
-            filteredProductsArray={filteredProductsArray}
             renderedProducts={renderedProducts}
+            pages={pages}
           />
 
           <ShopSideBar

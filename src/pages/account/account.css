@@ -330,3 +330,14 @@
     }
 
 }
+
+@media only screen and (max-width: 768px) and (min-width: 480px) {
+    .account-main .account-main-box {
+        width: 90%;
+        margin: auto;
+    }
+
+    .account-main .account-main-box .account-tabs .tab-single {
+        width: 100%;
+    }
+}

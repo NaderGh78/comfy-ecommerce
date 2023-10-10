@@ -42,8 +42,18 @@ function OrderConfirmed() {
             {/* end middle */}
 
             <div className="bottom d-flex justify-content-evenly align-items-center pb-4">
-                <Link to="/account/myOrder" className='text-decoration-none bg-dark text-white py-2 px-3 rounded-2'>Go to order information</Link>
-                <Link to="/shop" className='text-decoration-none bg-dark text-white py-2 px-3 rounded-2'>Continue shopping</Link>
+                <Link
+                    to="/account/myOrder"
+                    className='text-decoration-none bg-dark text-white py-2 px-3 rounded-2'
+                >
+                    Go to order information
+                </Link>
+                <Link
+                    to={"/shop?category=all&brand=all&sortBy=default&price=0&page=1"}
+                    className='text-decoration-none bg-dark text-white py-2 px-3 rounded-2'
+                >
+                    Continue shopping
+                </Link>
             </div>
             {/* end bottom */}
         </div>

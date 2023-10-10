@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import ShopSideBarSmall from "./ShopSideBarSmall";
 
 /*======================================*/
@@ -19,17 +18,6 @@ const ShopSideBar = (props) => {
         showSmallSideBar,
         handleCloseShowSmallSideBar
     } = props;
-
-    useEffect(() => {
-
-        // //by default make the products sorting by it id
-        // setProducts([...products.sort((a, b) => { return a.pId - b.pId })]);
-
-        // // by default show all products when open shop page
-        // setPrice(max)
-
-    }, [max]);
-
 
     // get the percentage value,in order to fill the bg color of input range slider daynamicly based percentage
     let percentage = (priceQuery - min) * 100 / (max - min);

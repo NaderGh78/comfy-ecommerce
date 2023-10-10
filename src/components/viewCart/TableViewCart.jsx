@@ -122,7 +122,7 @@ const TableViewCart = () => {
                             <div className='my-flex-div row justify-content-between align-items-center mx-0 py-2'>
                                 <div className="col-lg-4 col-sm-4">
                                     <Link
-                                        to="/shop"
+                                        to={"/shop?category=all&brand=all&sortBy=default&price=0&page=1"}
                                         className='continue-shop text-decoration-none d-flex align-items-center gap-2 bg-dark text-white'
                                     >
                                         <FaRegCircleLeft /> Continue Shopping

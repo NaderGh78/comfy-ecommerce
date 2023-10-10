@@ -60,7 +60,6 @@ const TopMenu = () => {
 
               <Nav.Link
                 as={Link}
-                // to={"/shop?category=all&brand=all&sortBy=Default&price=0"}
                 to={"/shop?category=all&brand=all&sortBy=default&price=0&page=1"}
                 className={url === "/shop" ? "active" : ""}
                 onClick={() => setExpanded(false)}

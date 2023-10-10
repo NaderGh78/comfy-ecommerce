@@ -9,19 +9,6 @@ export const OpenModalContext = createContext();
 
 export const OpenModalContextProvider = ({ children }) => {
 
-    // search params  
-    const [searchParams, setSearchParams] = useSearchParams();
-
-    const categoryQuery = searchParams.get("category");
-
-    const brandQuery = searchParams.get("brand");
-
-    const selectQuery = searchParams.get("sortBy");
-
-    const priceQuery = searchParams.get("price");
-
-    /*-------------------------------*/
-
     // for cart modal
     const [showCartModal, setShowCartModal] = useState(false);
 
@@ -87,13 +74,7 @@ export const OpenModalContextProvider = ({ children }) => {
             openProductSlider,
             setOpenProductSlider,
             handleOpenSlider,
-            handleCloseSlider,
-            searchParams,
-            setSearchParams,
-            categoryQuery,
-            selectQuery,
-            brandQuery,
-            priceQuery
+            handleCloseSlider
         }}
         >
             {children}

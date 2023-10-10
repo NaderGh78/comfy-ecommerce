@@ -1,28 +1,23 @@
 import { LiaAngleDownSolid } from "react-icons/lia";
 import { FaFilter } from "react-icons/fa6";
-import SingleProductUi from '../../components/shared/SingleProductUi';
 import Pagination from "./Pagination";
-import { AllProductsItems } from "../../config/data";
 
 /*======================================*/
 /*======================================*/
 /*======================================*/
 
 const AllShopProducts = ({
-    products,
-    params,
     updateFilter,
-    priceQuery,
-    min,
     selectQuery,
     handleShowSmallSideBar,
     paginationQuery,
     currentPage,
     setCurrentPage,
     activePagination,
-    setActivePagination, renderedProducts,
-    pages,
-    orderedProducts, arrayToRender, filteredProductsArray }) => {
+    setActivePagination,
+    renderedProducts,
+    pages
+}) => {
 
 
 
@@ -30,7 +25,7 @@ const AllShopProducts = ({
         <div className="left">
             <div className="top-part">
                 {
-                    renderedProducts.length > 0
+                    renderedProducts?.length > 0
                     &&
                     <>
                         {/* show the number of page when exist pagination */}
@@ -43,7 +38,7 @@ const AllShopProducts = ({
                 {/* this btn will show the sidebar section in small devices */}
                 <button className="show-sidebar" onClick={handleShowSmallSideBar}><FaFilter /> Filters</button>
                 {
-                    renderedProducts.length > 0 &&
+                    renderedProducts?.length > 0 &&
                     <div className="select-box">
                         <select
                             name=""
@@ -67,33 +62,6 @@ const AllShopProducts = ({
 
             </div>
             <div className="all-shop-products-box">
-
-                {/* just filter the categories */}
-                {/* 
-
-                {params.category !== "all"
-                    ? products
-                        .filter(p =>
-
-                            p.pCategory === params.category
-
-                           // && p.pBrand === params.brand
-
-                           // && p.pPrice >= min && p.pPrice <= Number(priceQuery)
-
-                        ).map((d, i) => (
-                            <SingleProductUi data={d} key={i} />
-                        )) 
-                    :
-                    AllProductsItems.map((d, i) => (
-                        <SingleProductUi data={d} key={i} />
-                    )) 
-                } 
-
-                */}
-
-                {/* ===================================== */}
-
                 {
                     /*
                     if the filteredproduct array contains some products , 
@@ -101,7 +69,7 @@ const AllShopProducts = ({
 
                     NOTE: put the pagination NOT in parent comp , in order to keep the style
                     */
-                    renderedProducts.length > 0 ?
+                    renderedProducts?.length > 0 ?
                         <>
                             {renderedProducts}
 
