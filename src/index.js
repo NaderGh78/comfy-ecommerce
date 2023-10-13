@@ -16,7 +16,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     {/* use HashRouter NOT BrouwserRouter,coz the project upload on github */}
-    <HashRouter>
+ 
       <AuthContextProvider>
         <OpenModalContextProvider>
           <CartContextProvider>
@@ -26,6 +26,6 @@ root.render(
           </CartContextProvider>
         </OpenModalContextProvider>
       </AuthContextProvider>
-    </HashRouter>
+    
   </React.StrictMode>
 ); 

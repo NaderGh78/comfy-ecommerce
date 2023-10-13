@@ -157,7 +157,12 @@ const TableViewCart = () => {
             <>
                 <div className='table-empty text-center'>
                     <h6 className='mb-4'>Your cart is empty.</h6>
-                    <Link to="/shop" className='text-decoration-none bg-dark text-white px-3 py-2 mt-4'>CONTINUE SHOPPING</Link>
+                    <Link
+                        to={"/shop?category=all&brand=all&sortBy=default&price=0&page=1"}
+                        className='text-decoration-none bg-dark text-white px-3 py-2 mt-4'
+                    >
+                        CONTINUE SHOPPING
+                    </Link>
                 </div>
             </>
     )

@@ -1,6 +1,8 @@
 import { LiaAngleDownSolid } from "react-icons/lia";
 import { FaFilter } from "react-icons/fa6";
 import Pagination from "./Pagination";
+import { useEffect, useRef } from "react";
+import { useLocation } from "react-router-dom";
 
 /*======================================*/
 /*======================================*/
@@ -18,8 +20,6 @@ const AllShopProducts = ({
     renderedProducts,
     pages
 }) => {
-
-
 
     return (
         <div className="left">
@@ -61,7 +61,7 @@ const AllShopProducts = ({
                 }
 
             </div>
-            <div className="all-shop-products-box">
+            <div className="all-shop-products-box" id="scroll-div">
                 {
                     /*
                     if the filteredproduct array contains some products , 
@@ -86,8 +86,6 @@ const AllShopProducts = ({
                         :
                         <><h5 className="w-100 text-center">Sorry, no matching products</h5></>
                 }
-
-
             </div>
         </div>
     )

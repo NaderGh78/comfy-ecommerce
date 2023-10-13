@@ -3,6 +3,7 @@ import { useEffect, useState, useContext } from 'react';
 import { FaCartShopping, FaPlus } from "react-icons/fa6";
 import { Spinner } from 'react-bootstrap';
 import { AuthContext } from '../../../context/AuthContext';
+import { OpenModalContext } from '../../../allPagesPaths';
 
 /*======================================*/
 /*======================================*/
@@ -11,6 +12,8 @@ import { AuthContext } from '../../../context/AuthContext';
 const AddToCartBtn = ({ data: { pId }, handleAddTocart }) => {
 
   const { existUser } = useContext(AuthContext);
+
+  const { setShowRegisterModal, setShowCartModal } = useContext(OpenModalContext);
 
   const [isBtnClicked, setIsBtnClicked] = useState(false);
 
@@ -59,6 +62,15 @@ const AddToCartBtn = ({ data: { pId }, handleAddTocart }) => {
     therefore when user try to add to cart WITHOUT REGISTER the register modal will show 
     */
     handleAddTocart(pId);
+
+    // if not exist user and click on [add to cart btn] , show the register modal and hide the cartmodal
+    if (!existUser) {
+
+      setShowCartModal(false);
+
+      setShowRegisterModal(true);
+
+    }
 
   }
 

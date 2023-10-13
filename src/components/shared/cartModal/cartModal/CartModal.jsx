@@ -62,7 +62,7 @@ const CartModal = () => {
                                 <div className='cart-is-empty'>
                                     <h6>Your cart is empty.</h6>
                                     <Link
-                                        to="/shop"
+                                        to="/shop?category=all&brand=all&sortBy=default&price=0&page=1"
                                         onClick={() => setShowCartModal(false)}
                                     >Return to Shop</Link>
                                 </div>
